@@ -26,13 +26,5 @@ header-includes: |
 
 # Foo:
 
-foo bar baz
+PLAN
 
-```python
-# module foo.py
-
-a = 42
-
-def bar(x):
-    print(x)
-```
