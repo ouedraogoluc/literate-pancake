@@ -12,12 +12,12 @@ header-includes: |
     \pagestyle{fancy}
     \fancyhf{}
     \rhead{Dakar Institute of Technology}
-    \lhead{Patrick Nsukami}
+    \lhead{Luc Ouedraogo}
     \rfoot{Page \thepage}
     \hypersetup{pdftex,
-            pdfauthor={Patrick Nsukami},
+            pdfauthor={Luc Ouedraogo},
             pdftitle={Introduction to Python programming},
-            pdfsubject={Introduction to Python programming},
+            pdfsubject={Python Packaging  programming},
             pdfkeywords={Python, Programming},
             pdfproducer={Emacs, Pandoc, Latex, Markdown},
             pdfcreator={Emacs, Pandoc, Latex, Markdown}}
