@@ -24,7 +24,18 @@ header-includes: |
     
 ---
 
-# Foo:
+# Python Packaging  programming 
 
-PLAN
+## PLAN
+## Introduction
+##  I.	C'est quoi un package Python ?
+##  II.	Comment creer un package en Python ? ?
+## III.	Comment installer un package avec Python ?
+## IV.	Comment installer un package avec pip ?
+## V.	Comment installer un package Python sans pip ?
+## VI.	Pratique 
+## Conclusion
+
+
+
 
