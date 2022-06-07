@@ -28,7 +28,7 @@ header-includes: |
 
 ## PLAN
 ## Introduction
-## I.	Definition de package en  Python 
+## I.	Definition  et explication d'un package en  Python 
 ## II.Comment installer un package avec Python 
 ## III.Comment installer un package avec pip 
 ## IV.Comment installer un package Python sans pip 
@@ -164,7 +164,7 @@ def demo():
 ```
 Ici, si nous ré-exécutons le code précédent depuis la console, ça pose problème !
 
-ImportError: cannot import name 'x' from partially initialized module 'b' (most likely due to a circular import) (C:\Users\OUEDRAOGO LUC\datacollect\b.py)
+ImportError: cannot import name 'x' from partially initialized module 'b' (most likely due to a circular import) 
 
 Pourquoi cette différence ?
 
