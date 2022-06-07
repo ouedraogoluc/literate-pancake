@@ -36,7 +36,7 @@ header-includes: |
 ## Conclusion
 
 # Introduction
-Nous allons découvrir une autre facette du langage Python qui en fait un langage à la fois très puissant, modulable et évolutif : l’utilisation de package. Nous allons notamment étudier le fonctionnement de quelques package prédéfinis qu’il convient de savoir manipuler.Dans cet article nous allons montré comment creer un package,comment installer un package avec python ,comment installer un package avec pip,comment installer un package sans pip,etudier quelque package en python et enfin construire notre propre package
+Nous allons découvrir une autre facette du langage Python qui en fait un langage à la fois très puissant, modulable et évolutif : l’utilisation de package. Nous allons notamment étudier le fonctionnement de quelques package prédéfinis qu’il convient de savoir manipuler.Dans cet article nous allons montré comment creer un package,comment installer un package avec python ,comment installer un package avec pip,comment installer un package sans pip,et enfin etudier quelque package en python 
 
 # I.	Definition de package en  Python 
 
