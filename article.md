@@ -29,14 +29,13 @@ header-includes: |
 ## PLAN
 ## Introduction
 ## I.	Definition  et explication d'un package en  Python 
-## II.Comment installer un package avec Python 
-## III.Comment installer un package avec pip 
-## IV.Comment installer un package Python sans pip 
+## III.Comment installer un package Python sans pip 
+## IV.Comment installer un package avec pip 
 ## V.Quelque package en python
 ## Conclusion
 
 # Introduction
-Nous allons découvrir une autre facette du langage Python qui en fait un langage à la fois très puissant, modulable et évolutif : l’utilisation de package. Nous allons notamment étudier le fonctionnement de quelques package prédéfinis qu’il convient de savoir manipuler.Dans cet article nous allons montré comment creer un package,comment installer un package avec python ,comment installer un package avec pip,comment installer un package sans pip,et enfin etudier quelque package en python 
+Nous allons découvrir une autre facette du langage Python qui en fait un langage à la fois très puissant, modulable et évolutif : l’utilisation de package. Nous allons notamment étudier le fonctionnement de quelques package prédéfinis qu’il convient de savoir manipuler.Dans cet article nous allons montré comment creer un package ,comment installer un package avec pip,comment installer un package sans pip,et enfin etudier quelque package en python 
 
 # I.	Definition de package en  Python 
 
@@ -173,3 +172,64 @@ Au début du module a, nous demandons maintenant d'extraire la variable x du mod
 Ceci est également dû au fait que les noms de variables utilisés dans les fonctions ne sont pas résolus avant l'exécution. La ligne print(b.x) n'est donc pas un problème, puisque lorsque la fonction est appelée, b aura été complètement chargée.
 
 On peut reproduire l'erreur, sans import de ..., si on essaie d'utiliser x directement à partir du module a.
+
+# II.Comment installer un package Python sans pip 
+
+La pratique la plus courante d’installation de bibliothèques externes dans votre système consiste à utiliser la commande Python pip . Cependant, il existe une autre méthode pour installer manuellement les bibliothèques Python sans utiliser la commande pip .
+
+Dans cet article, nous allons expliquer comment installer manuellement un package python.  
+
+Vous trouverez ci-dessous l’approche étape par étape pour installer manuellement la bibliothèque de selenium dans un système. 
+
+## Étape 1: téléchargement des fichiers
+  * [Allez sur le site ]( https://pypi.org/) recherchez le package   que vous souhaitez installer
+  * Dans le menu sur le côté gauche, cliquez sur le bouton de téléchargement des fichiers.
+
+## Étape 2: Décompressez les fichiers téléchargés s’ils sont compressés à l’aide d’un logiciel de décompression.
+
+## Étape 3: Remplacez le répertoire de travail actuel par le fichier contenant Setup.py à l’aide de la commande cd.
+
+## Étape 4: Lisez attentivement les instructions d’installation et installez comme indiqué.
+
+## Étape 5: Après avoir remplacé le répertoire de travail actuel par le fichier contenant Setup.py, tapez la commande suivante:
+
+```python
+python Setup.py install
+```
+Voilà, vous êtes maintenant prêt à utiliser la bibliothèque installée et vous pouvez importer cette bibliothèque dans votre programme python.
+
+# III.Comment installer un package avec pip 
+
+Le langage Python propose un nombre considérable de librairies. L'abondance est telle que des équipes de développeurs ont décidé de créer des gestionnaires de paquets pour faciliter la gestion de toutes ces librairies. Le gestionnaire de paquets PIP est devenu l'outil le plus utilisé pour gérer les librairies de son projet, à tel point qu'il est désormais intégré par défaut à Python. Si ce n'est pas le cas de votre installation, vous pouvez également le faire  manuellement comme nous l'avons vue précédemment.
+
+Si vous récupérez et installez Python sur le site officiel, le gestionnaire de paquets PIP est déjà intégré à l'installeur. L'utilisation dépend du système d'exploitation que vous possédez. Si vous travaillez avec un système basé sur Unix comme Linux ou Mac, vous devez utiliser la commande "python3...". L'argument "-m" indique que l'on souhaite appeler un module, ici ce sera "pip". La commande "install" installer un paquet.
+```python
+  python3.9 -m pip install [le_paquet_a_installer]
+```
+Si vous travaillez avec un système de la famille Windows, alors la commande "py" remplace "python3...". Le reste de la commande ne change pas.
+```python
+py -m pip install [le_paquet_a_installer]
+
+```
+
+Il peut cependant arriver que PIP ne soit pas installé avec le langage Python. Dans ce cas, vous obtiendrez le message d'erreur "No module named pip". Il existe une commande Python qui vérifie que PIP est installé et, si ce n'est pas le cas, récupère et installe le module.
+```python
+python3.9 -m ensurepip --default-pip
+
+````
+
+
+
+Une autre solution consiste à télécharger sur le site des développeurs de PIP le script d'installation du gestionnaire de paquets. Voici la commande pour le télécharger avec Linux ou l'outil Wget pour Windows :
+
+```
+wget https://bootstrap.pypa.io/get-pip.py
+
+```
+
+Vous pouvez lancer l'installation avec la commande suivante. Vous devez posséder les droits d'administration pour installer PIP avec ce script.
+
+```python
+sudo python3.6 get-pip.py
+```
+
