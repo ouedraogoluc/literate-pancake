@@ -179,7 +179,7 @@ La pratique la plus courante d’installation de bibliothèques externes dans vo
 
 Dans cet article, nous allons expliquer comment installer manuellement un package python.  
 
-Vous trouverez ci-dessous l’approche étape par étape pour installer manuellement la bibliothèque de selenium dans un système. 
+Vous trouverez ci-dessous l’approche étape par étape pour installer manuellement une bibliothèque.
 
 ## Étape 1: téléchargement des fichiers
   * [Allez sur le site ]( https://pypi.org/) recherchez le package   que vous souhaitez installer
