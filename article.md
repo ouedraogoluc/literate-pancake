@@ -37,7 +37,7 @@ header-includes: |
 # Introduction
 Nous allons découvrir une autre facette du langage Python qui en fait un langage à la fois très puissant, modulable et évolutif : l’utilisation de package. Nous allons notamment étudier le fonctionnement de quelques package prédéfinis qu’il convient de savoir manipuler.Dans cet article nous allons montré comment creer un package ,comment installer un package avec pip,comment installer un package sans pip,et enfin etudier quelque package en python 
 
-# I.	Definition de package en  Python 
+# I.Definition  et explication d'un package en  Python
 
 Les packages (paquets) sont des modules, mais qui peuvent contenir d’autres modules.
 
@@ -232,4 +232,82 @@ Vous pouvez lancer l'installation avec la commande suivante. Vous devez posséde
 ```python
 sudo python3.6 get-pip.py
 ```
+
+## V.Quelque package en python
+
+Lorsque vous travaillez avec des projets, vous pouvez rencontrer des scénarios où vous ne pourrez pas résoudre avec le codage standard d'un langage de programmation. Nous avons besoin de packages et de modules pour surmonter ces problèmes.Dans  cet article nous allons etudié quelques packages et modules en python.
+
+
+### BeautifulSoup4 – web scraping
+
+BeautifulSoup ,le package est utilisée pour le web scraping. C'est un module pratique avec lequel travailler. Même les débutants peuvent commencer à l'utiliser en utilisant le docs. 
+
+Vous pouvez installer BeautifulSoup en tapant la commande suivante dans le terminal / ligne de commande.
+
+```python
+  pip install beautifulsoup4
+```
+
+```python
+## importing bs4, requests modules
+import bs4
+import requests
+
+## initialiser  url
+url = "https://www.consumerreports.org/cro/a-to-z-index/products/index.htm"
+
+## obtenir la réponse de la page en utilisant la méthode get du module requests
+page = requests.get(url)
+
+## stocker le contenu de la page dans une variable
+html = page.content
+
+## création d'un objet BeautifulSoup
+soup = bs4.BeautifulSoup(html, "lxml")
+
+## voir la classe ou l'id de la balise qui contient les noms et les liens
+div_class = "crux-body-copy"
+
+## récupérer tous les divs en utilisant la méthode find_all
+div_tags = soup.find_all("div", class_=div_class)## trouver les divs qui ont la classe mentionnée
+
+## nous verrons toutes les balises avec une balise qui a un nom et un lien à l'intérieur de la div.
+for tag in div_tags:
+    print(tag)
+
+```
+
+# Science des données et apprentissage automatique
+
+## Numpy est utilisé pour le calcul scientifique.
+
+Il nous permet de travailler sur des tableaux multidimensionnels. L'implémentation des tableaux n'existe pas en Python. Les développeurs utilisent principalement numpy dans les projets d'apprentissage automatique. C'est un package facile à apprendre et open-source. Presque tous les ingénieurs en apprentissage machine ou les data scientists utilisent ce module pour les calculs mathématiques complexes.
+
+Exécutez la commande suivante pour installer le numpy module.
+
+```python
+pip install numpy
+```
+## Pandas
+
+Pandas est un module d'analyse de données. Nous pouvons filtrer les données plus efficacement en utilisant le pandas bibliothèque. Il propose différents types de structures de données pratiques à utiliser. Il fournit également la gestion de fichiers avec différents formats de fichiers.
+
+Installez le module à l'aide de la commande suivante.
+
+```python
+pip install pandas
+```
+## Matplotlib
+
+matplotlib est une bibliothèque de traçage de graphes 2D. Vous pouvez visualiser les données en utilisant matplotlib.
+
+Il génere des images des figures dans différents formats. il trace différents types de diagrammes tels que des graphiques à barres, des graphiques d'erreur, des histogrammes, des nuages ​​de points, etc.,
+ vous pouvez installer le matplotlib en utilisant la commande suivante.
+
+ ```python
+pip install matplotlib
+```
+
+
+# Conclusion
 
