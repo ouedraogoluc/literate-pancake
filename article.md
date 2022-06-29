@@ -35,6 +35,7 @@ header-includes: |
 ## Conclusion
 
 # Introduction
+
 Nous allons découvrir une autre facette du langage Python qui en fait un langage à la fois très puissant, modulable et évolutif : l’utilisation de package. Nous allons notamment étudier le fonctionnement de quelques package prédéfinis qu’il convient de savoir manipuler.Dans cet article nous allons montré comment creer un package ,comment installer un package avec pip,comment installer un package sans pip,et enfin etudier quelque package en python 
 
 # I.Definition  et explication d'un package en  Python
@@ -310,4 +311,5 @@ pip install matplotlib
 
 
 # Conclusion
-
+Cet article nous a permis de mettre en évidence toute la complexité qui se cache derrière un package . 
+En partant de d'installation d'un package avec ou sans pip et l'etude des packages existant.
