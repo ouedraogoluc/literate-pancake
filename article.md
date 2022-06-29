@@ -312,4 +312,4 @@ pip install matplotlib
 
 # Conclusion
 Cet article nous a permis de mettre en évidence toute la complexité qui se cache derrière un package . 
-En partant de d'installation d'un package avec ou sans pip et l'etude des packages existant.
+En partant  d'installation d'un package avec ou sans pip et l'etude des packages existants.
